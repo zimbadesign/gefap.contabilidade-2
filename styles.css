@@ -184,3 +184,15 @@ h1,h2,h3,p{margin-top:0}.hero h1,.bg-section h2{font-weight:800;letter-spacing:-
 
 .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 
+
+/* Ajuste responsivo: oculta as imagens de fundo das seções no menu/mobile.
+   No desktop, os backgrounds originais continuam inalterados. */
+@media (max-width:900px){
+  .about::before,
+  .raiox::before,
+  .reforma::before{
+    content:none!important;
+    display:none!important;
+    background-image:none!important;
+  }
+}
